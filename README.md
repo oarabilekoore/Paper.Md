@@ -12,4 +12,3 @@ The pipeline modules include:
 * Text OCR (internal/ocr): Uses Gosseract (Tesseract C++ API bindings) to process standard text regions.
 * Math OCR (internal/math): Uses the ONNX Runtime Go library to execute an INT8 quantized Pix2Tex model. This isolates heavy inference strictly to equation bounding boxes.
 * Document Generation (internal/markdown, internal/typst): Reconstructs the spatial layout of the parsed elements. It injects the strings and SVG data into native Markdown syntax or Typst markup.
-# Paper.Md
