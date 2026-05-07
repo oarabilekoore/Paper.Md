@@ -1,0 +1,9 @@
+cancellation
+date
+diagram
+equation
+figure
+heading
+list
+paragraph
+table

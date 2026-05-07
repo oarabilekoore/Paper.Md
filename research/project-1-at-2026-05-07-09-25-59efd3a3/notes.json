@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "cancellation"
+    },
+    {
+      "id": 1,
+      "name": "date"
+    },
+    {
+      "id": 2,
+      "name": "diagram"
+    },
+    {
+      "id": 3,
+      "name": "equation"
+    },
+    {
+      "id": 4,
+      "name": "figure"
+    },
+    {
+      "id": 5,
+      "name": "heading"
+    },
+    {
+      "id": 6,
+      "name": "list"
+    },
+    {
+      "id": 7,
+      "name": "paragraph"
+    },
+    {
+      "id": 8,
+      "name": "table"
+    }
+  ],
+  "info": {
+    "year": 2026,
+    "version": "1.0",
+    "contributor": "Label Studio"
+  }
+}
