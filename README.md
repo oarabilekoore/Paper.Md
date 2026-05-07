@@ -11,6 +11,8 @@ Recent experiments with pre-trained layout models and heuristic computer vision 
 Detailed documentation of these experiments and the resulting technical shift can be found in the research log:
 * **[Research Findings: Layout Analysis](./research/Research_Findings_Layout_Analysis.md)**
 
+* **[Research Findings: YOLOv11 Nano Inference Analysis and Data Normalization Protocols](./research/Research_Findings_YOLOv11_Nano_Inference_Analysis_and_Data_Normalization_Protocols.md)**
+* 
 ## System Architecture
 The pipeline executes a sequential workflow optimized for varying hardware profiles.
 
