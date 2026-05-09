@@ -12,7 +12,6 @@ Detailed documentation of these experiments and the resulting technical shift ca
 * **[Research Findings: Layout Analysis](./research/Research_Findings_Layout_Analysis.md)**
 
 * **[Research Findings: YOLOv11 Nano Inference Analysis and Data Normalization Protocols](./research/Research_Findings_YOLOv11_Nano_Inference_Analysis_and_Data_Normalization_Protocols.md)**
-* 
 ## System Architecture
 The pipeline executes a sequential workflow optimized for varying hardware profiles.
 
@@ -32,19 +31,16 @@ And I plan on training it on a larger, more diverse dataset in the future, for n
 - Train a custom YOLOv11 Nano model on a handwritten technical notes dataset, first I am using label-studio to annotate the dataset and then use Google Colab to train the model. This initial model will be used to output the following segments:
   1. Heading
   2. Equation
-  3. Diagram (This is a form of visual content, like a flowchart or mind map)
   4. Figure (This is a form of visual content, like an image or graph)
-  5. Cancellation (cancelled text blocks)
   6. Table
   7. List
   8. Date
   9. Paragraph
 
 
-
 - A second processing component targets block diagrams and flowcharts. It detects geometric nodes, directional edges and hand drawn shapes. Heuristic algorithms calculate spatial intersections to map relational text and construct Mermaid graph syntax.
+ 
+## Development setup
 
-## Tech Stack
-* **Internal Processing:** Python (OpenCV, Ultralytics, PyTesseract).
-* **Data Parsing:** TypeScript, and Bun.
-* **Inference Engine:** ONNX Runtime for local CPU execution.
+[Colab Script](https://colab.research.google.com/drive/1dAh-BjzS0RTTE1kF7Bv_9cwfVaie_BeL?usp=sharing)
+
