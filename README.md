@@ -8,7 +8,7 @@ PaperMd is a local-first, offline pipeline that converts photographs of handwrit
 
 The core thesis is that layout understanding and handwriting recognition are two separate problems that must be solved independently before they can be composed. PaperMd solves them in sequence.
 
----
+
 
 ## The Problem
 
@@ -16,7 +16,7 @@ Existing document AI is trained on digital PDFs and typed text. It fails on hand
 
 PaperMd is being built to solve this specifically and locally, with no external API dependencies.
 
----
+
 
 ## Current Status
 
@@ -26,14 +26,14 @@ The first training batch is being annotated in Label Studio using the class sche
 
 Target for v1 release: 300+ annotated images across diverse handwriting styles, subjects, and capture conditions.
 
----
+
 
 ## Label Schema
 
 The following classes are used for layout annotation in Label Studio:
 
 | ID | Class | Description |
-|---|---|---|
+||||
 | 1 | `Abandon` | Crossed-out or cancelled content. Box tightly around the strikethrough only. |
 | 2 | `Title` | Page or section title. Typically larger, centred, or isolated at the top. |
 | 3 | `Heading` | Sub-section heading. Bolded, underlined, or spatially separated from body text. |
@@ -54,7 +54,7 @@ The following classes are used for layout annotation in Label Studio:
 - **Boxes are consistently loose** — due to ascender/descender overlap between handwritten lines, boxes will clip adjacent ruled lines. This is acceptable. Consistent loose boxes across all images are better than inconsistently tight ones.
 - **Minimum annotation size** — do not annotate content smaller than approximately 20×20px at normalized resolution. Stray marks, marginalia, and partial characters at page edges are ignored.
 
----
+
 
 ## System Architecture
 
@@ -79,7 +79,7 @@ A custom YOLOv11 Nano model segments the page into discrete content blocks and c
 Each detected region is cropped and routed to a specialist extractor based on its class:
 
 | Class | Extractor |
-|---|---|
+|||
 | `Plain_Text`, `Heading`, `Title`, `List`, `Caption` | TrOCR (`microsoft/trocr-base-handwritten`) |
 | `Formula` | LaTeX-OCR (Pix2Tex) |
 | `Figure` | Preserved as image crop in output (v1). Subclassification model in v2. |
@@ -91,7 +91,7 @@ Each detected region is cropped and routed to a specialist extractor based on it
 
 Extracted content and spatial coordinates are serialized into a JSON AST preserving reading order. This is compiled to Markdown for v1, with Typst and DOCX targets planned for later versions.
 
----
+
 
 ## Roadmap
 
@@ -119,7 +119,7 @@ Extracted content and spatial coordinates are serialized into a JSON AST preserv
 - [ ] Scan input support (flatbed scanner pipeline)
 - [ ] Public dataset release
 
----
+
 
 ## Research Log
 
@@ -128,7 +128,7 @@ Detailed findings from the investigative phase are documented here:
 - **[Research Findings: Layout Analysis](./research/Research_Findings_Layout_Analysis.md)** — Why LayoutParser, OpenCV heuristics, and Tesseract segmentation all failed on handwritten notes, and the decision to train a custom model.
 - **[Research Findings: YOLOv11 Nano Inference Analysis and Data Normalization Protocols](./research/Research_Findings_YOLOv11_Nano_Inference_Analysis_and_Data_Normalization_Protocols.md)** — Analysis of the first 24-image inference run, failure modes, confidence score distribution, and data normalization requirements.
 
----
+
 
 ## Contributing
 
@@ -149,7 +149,7 @@ What we do with them:
 
 To contribute, open an issue tagged `dataset-contribution` or contact the maintainer directly.
 
----
+
 
 ## Development Setup
 
@@ -166,7 +166,7 @@ import * as ort from 'onnxruntime-node';
 const session = await ort.InferenceSession.create('./weights/papermd-layout.onnx');
 ```
 
----
+
 
 ## Hardware Target
 
