@@ -78,14 +78,18 @@ A custom YOLOv11 Nano model segments the page into discrete content blocks and c
 
 Each detected region is cropped and routed to a specialist extractor based on its class:
 
-| Class | Extractor |
-|||
-| `Plain_Text`, `Heading`, `Title`, `List`, `Caption` | TrOCR (`microsoft/trocr-base-handwritten`) |
-| `Formula` | LaTeX-OCR (Pix2Tex) |
-| `Figure` | Preserved as image crop in output (v1). Subclassification model in v2. |
-| `Table` | TrOCR per cell (v2) |
-| `Date` | TrOCR |
-| `Abandon` | Discarded |
+| ID | Class | Description |
+|:---:|---|---|
+| `1` | `Abandon` | Crossed-out or cancelled content |
+| `2` | `Title` | Page or section title |
+| `3` | `Heading` | Sub-section heading |
+| `4` | `Plain_Text` | Body paragraph block |
+| `5` | `Formula` | Mathematical expression or equation |
+| `6` | `Figure` | Diagram, graph, sketch, or any visual content |
+| `7` | `Caption` | Label associated with a Figure |
+| `8` | `Table` | Tabular data with grid structure |
+| `9` | `List` | Bulleted or numbered list |
+| `0` | `Date` | Date field, typically top-right corner |
 
 ### Output
 
