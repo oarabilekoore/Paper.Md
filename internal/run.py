@@ -6,8 +6,8 @@ from ultralytics import YOLO
 # Disable NNPACK to avoid hardware warnings on Celeron
 os.environ["USE_NNPACK"] = "0"
 
-model_path = "./pmd2.pt"
-test_image_dir = "../testing_data/ALL/"
+model_path = "../assets/papermd-v2-model.pt"
+test_image_dir = "../../PaperMd Training Images/Batch 1/"
 
 if not os.path.exists(model_path):
     print(f"Error: Model weights not found at {model_path}")
