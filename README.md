@@ -33,17 +33,17 @@ Target for v1 release: 300+ annotated images across diverse handwriting styles, 
 The following classes are used for layout annotation in Label Studio:
 
 | ID | Class | Description |
-||||
-| 1 | `Abandon` | Crossed-out or cancelled content. Box tightly around the strikethrough only. |
-| 2 | `Title` | Page or section title. Typically larger, centred, or isolated at the top. |
-| 3 | `Heading` | Sub-section heading. Bolded, underlined, or spatially separated from body text. |
-| 4 | `Plain_Text` | Body paragraph. One box per contiguous paragraph block regardless of line count. |
-| 5 | `Formula` | Any mathematical expression, equation, or symbolic notation. One box per contiguous equation block — never one box per line. |
-| 6 | `Figure` | Any visual content: diagrams, graphs, sketches, free body diagrams, circuit drawings. |
-| 7 | `Caption` | Label or description associated with a Figure. Always annotated separately from the Figure. |
-| 8 | `Table` | Tabular data with visible or implied grid structure. |
-| 9 | `List` | Bulleted or numbered list. One box around the full list including all items. |
-| 0 | `Date` | Date field, typically top-right corner of a notebook page. |
+|:---:|---|---|
+| `1` | `Abandon` | Crossed-out or cancelled content |
+| `2` | `Title` | Page or section title |
+| `3` | `Heading` | Sub-section heading |
+| `4` | `Plain_Text` | Body paragraph block |
+| `5` | `Formula` | Mathematical expression or equation |
+| `6` | `Figure` | Diagram, graph, sketch, or any visual content |
+| `7` | `Caption` | Label associated with a Figure |
+| `8` | `Table` | Tabular data with grid structure |
+| `9` | `List` | Bulleted or numbered list |
+| `0` | `Date` | Date field, typically top-right corner |
 
 ### Annotation Rules
 
