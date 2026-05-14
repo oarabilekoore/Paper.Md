@@ -1,0 +1,231 @@
+{
+  "event": "TASKS_DELETED",
+  "job_id": "1778553478",
+  "data": {
+    "tasks": [
+      {
+        "id": 94
+      },
+      {
+        "id": 96
+      },
+      {
+        "id": 97
+      },
+      {
+        "id": 98
+      },
+      {
+        "id": 99
+      },
+      {
+        "id": 101
+      },
+      {
+        "id": 102
+      },
+      {
+        "id": 103
+      },
+      {
+        "id": 113
+      },
+      {
+        "id": 119
+      },
+      {
+        "id": 120
+      },
+      {
+        "id": 122
+      },
+      {
+        "id": 123
+      },
+      {
+        "id": 124
+      },
+      {
+        "id": 125
+      },
+      {
+        "id": 126
+      },
+      {
+        "id": 127
+      },
+      {
+        "id": 128
+      },
+      {
+        "id": 129
+      },
+      {
+        "id": 130
+      },
+      {
+        "id": 131
+      },
+      {
+        "id": 132
+      },
+      {
+        "id": 133
+      },
+      {
+        "id": 134
+      },
+      {
+        "id": 135
+      },
+      {
+        "id": 136
+      },
+      {
+        "id": 137
+      },
+      {
+        "id": 138
+      },
+      {
+        "id": 139
+      },
+      {
+        "id": 140
+      },
+      {
+        "id": 141
+      },
+      {
+        "id": 142
+      },
+      {
+        "id": 143
+      },
+      {
+        "id": 144
+      },
+      {
+        "id": 145
+      },
+      {
+        "id": 146
+      }
+    ],
+    "project": {
+      "id": 5,
+      "task_number": 41,
+      "finished_task_number": 41,
+      "total_predictions_number": 13,
+      "total_annotations_number": 41,
+      "num_tasks_with_annotations": 41,
+      "useful_annotation_number": 41,
+      "ground_truth_number": 0,
+      "skipped_annotations_number": 0,
+      "title": "PaperMd Document Layout",
+      "description": "Macro-segmentation for handwritten notes. Targets: headings, math, and diagrams.",
+      "label_config": "<View>\n  <Image name=\"image\" value=\"$image\"/>\n  <RectangleLabels name=\"label\" toName=\"image\">\n    <Label value=\"Abandon\" background=\"#FFA39E\"/>\n    <Label value=\"Plain_Text\" background=\"#D3F261\"/>\n    <Label value=\"Formula\" background=\"#BAE7FF\"/>\n    <Label value=\"Figure\" background=\"#D6E4FF\"/>\n    <Label value=\"List_Identifier\" background=\"#EFDBFF\"/>\n    <Label value=\"Table\" background=\"#FFD666\"/>\n  </RectangleLabels>\n</View>",
+      "parsed_label_config": {
+        "label": {
+          "type": "RectangleLabels",
+          "to_name": [
+            "image"
+          ],
+          "inputs": [
+            {
+              "type": "Image",
+              "valueType": null,
+              "value": "image"
+            }
+          ],
+          "labels": [
+            "Abandon",
+            "Plain_Text",
+            "Formula",
+            "Figure",
+            "List_Identifier",
+            "Table"
+          ],
+          "labels_attrs": {
+            "Abandon": {
+              "value": "Abandon",
+              "background": "#FFA39E"
+            },
+            "Plain_Text": {
+              "value": "Plain_Text",
+              "background": "#D3F261"
+            },
+            "Formula": {
+              "value": "Formula",
+              "background": "#BAE7FF"
+            },
+            "Figure": {
+              "value": "Figure",
+              "background": "#D6E4FF"
+            },
+            "List_Identifier": {
+              "value": "List_Identifier",
+              "background": "#EFDBFF"
+            },
+            "Table": {
+              "value": "Table",
+              "background": "#FFD666"
+            }
+          }
+        }
+      },
+      "label_config_hash": -4845197462820458964,
+      "expert_instruction": "",
+      "show_instruction": false,
+      "show_skip_button": true,
+      "enable_empty_annotation": true,
+      "reveal_preannotations_interactively": false,
+      "show_annotation_history": false,
+      "show_collab_predictions": true,
+      "evaluate_predictions_automatically": false,
+      "token": "sqHfaIyRP07TWty4Pt9E6RfLRKFz48Tjolbr3Lxn",
+      "result_count": 0,
+      "color": "#FFFFFF",
+      "maximum_annotations": 1,
+      "min_annotations_to_start_training": 0,
+      "control_weights": {
+        "label": {
+          "overall": 1.0,
+          "type": "RectangleLabels",
+          "labels": {
+            "Abandon": 1.0,
+            "Plain_Text": 1.0,
+            "Formula": 1.0,
+            "Figure": 1.0,
+            "List_Identifier": 1.0,
+            "Table": 1.0
+          }
+        }
+      },
+      "model_version": "PaperMdLatest",
+      "data_types": {
+        "image": "Image"
+      },
+      "is_draft": false,
+      "is_published": false,
+      "created_at": "2026-05-09T21:24:28.192927Z",
+      "updated_at": "2026-05-11T18:48:44.961391Z",
+      "sampling": "Sequential sampling",
+      "skip_queue": "REQUEUE_FOR_OTHERS",
+      "show_ground_truth_first": false,
+      "annotator_evaluation_enabled": false,
+      "show_overlap_first": false,
+      "overlap_cohort_percentage": 100,
+      "task_data_login": null,
+      "task_data_password": null,
+      "pinned_at": null,
+      "custom_task_lock_ttl": null,
+      "deleted_at": null,
+      "purge_at": null,
+      "search_vector": null,
+      "organization": 1,
+      "created_by": 1,
+      "deleted_by": null
+    }
+  }
+}

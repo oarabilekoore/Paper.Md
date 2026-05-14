@@ -1,0 +1,10 @@
+{
+  "data": {
+    "image": "/data/local-files/?d=UUID_HERE.jpg"
+  },
+  "annotations": [
+    {
+      "result": []
+    }
+  ]
+}
